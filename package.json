@@ -8,12 +8,12 @@
     "deploy": "npx push-dir --dir=dist --branch=gh-pages"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.1",
     "postcss": "^8.2.12",
     "push-dir": "^0.4.1",
-    "tailwindcss": "^2.1.1",
+    "tailwindcss": "^3.0.9",
     "vite": "^2.1.5"
   }
 }

@@ -28,14 +28,14 @@ progress::-webkit-progress-value {
   color: #10b981 !important;
 }
 
-#dinoeatlife-headline::before {
+#sitzplan-headline::before {
   display: inline-block;
   height: 30px;
   width: 30px;
   position: relative;
   bottom: -8px;
   content: "";
-  background-image: url("./assets/dinoeatlife-logo.png");
+  background-image: url("./assets/sitzplan-logo.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;

@@ -37,7 +37,7 @@
             <h1 class="text-center text-3xl font-semibold mb-2">
               Christian Kozalla
             </h1>
-            <h2 class="text-center text-xl font-light">Web Developer</h2>
+            <h2 class="text-center text-xl font-light">Frontend Developer</h2>
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
@@ -180,23 +180,15 @@
             <ul class="list-none">
               <li>
                 <label for="js-skill">JavaScript</label>
-                <progress id="js-skill" max="100" value="75"></progress>
+                <progress id="js-skill" max="100" value="70"></progress>
               </li>
               <li>
                 <label for="ts-skill">TypeScript</label>
-                <progress id="ts-skill" max="100" value="40"></progress>
+                <progress id="ts-skill" max="100" value="50"></progress>
               </li>
               <li>
                 <label for="vue-skill">Vue / Vuex</label>
                 <progress id="vue-skill" max="100" value="80"></progress>
-              </li>
-              <li>
-                <label for="angular-skill">Angular</label>
-                <progress id="angular-skill" max="100" value="33"></progress>
-              </li>
-              <li>
-                <label for="rxjs-skill">RxJS</label>
-                <progress id="rxjs-skill" max="100" value="33"></progress>
               </li>
               <li>
                 <label for="react-skill">React</label>
@@ -204,7 +196,7 @@
               </li>
               <li>
                 <label for="nextjs-skill">Next.js</label>
-                <progress id="nextjs-skill" max="100" value="72"></progress>
+                <progress id="nextjs-skill" max="100" value="66"></progress>
               </li>
               <li>
                 <label for="eleventy-skill">Eleventy</label>
@@ -212,7 +204,7 @@
               </li>
               <li>
                 <label for="css-skill">SCSS</label>
-                <progress id="css-skill" max="100" value="75"></progress>
+                <progress id="css-skill" max="100" value="70"></progress>
               </li>
               <li>
                 <label for="design-skill">Inkscape / Figma</label>
@@ -227,13 +219,12 @@
                 <progress id="db-skill" max="100" value="60"></progress>
               </li>
               <li>
-                <div>Infrastructure / Hosting</div>
+                <div>Infrastruktur / Hosting / DB</div>
                 <p class="leading-8">
                   <span class="rounded-xl bg-gray-300 px-3">AWS</span>
                   <span class="rounded-xl bg-gray-300 px-3">Vercel</span>
                   <span class="rounded-xl bg-gray-300 px-3">Heroku</span>
                   <span class="rounded-xl bg-gray-300 px-3">DynamoDB</span>
-                  <span class="rounded-xl bg-gray-300 px-3">MongoDB</span>
                 </p>
               </li>
             </ul>
@@ -300,12 +291,14 @@
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
                   <p>
-                    a) Building out a Vue app which is used for managing content
-                    of an e-commerce store.
+                    a) Refactoring and adding features to a Vue app which is
+                    used for managing content of an e-commerce store.
                   </p>
                   <p>
                     b) Working on the frontend of an e-commerce store with SCSS
-                    and JavaScript
+                    and JavaScript. Improving developer experience, managing
+                    update of tools to state-of-the-art and improving web
+                    performance.
                   </p>
                 </div>
               </section>
@@ -315,10 +308,17 @@
                   Description:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  a) I took over responsibility of a legacy app for managing
-                  content data of product pages. The app reads and writes data
-                  to PHP arrays which can be rendered on the server with HTML
-                  templates.
+                  <p>
+                    a) I took over responsibility of a legacy app for managing
+                    content data of product pages. The app reads and writes data
+                    to PHP arrays which can be rendered on the server with HTML
+                    templates.
+                  </p>
+                  <p>
+                    b) The e-commerce store runs on a custom PHP web server
+                    since more than 15 years. Over time, technical debt has
+                    increased, so I am working against that!
+                  </p>
                 </div>
               </section>
               <section class="mb-6">
@@ -327,6 +327,9 @@
                   Tools:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
+                  <span class="rounded-xl bg-gray-300 px-3">JavaScript</span>
+                  <span class="rounded-xl bg-gray-300 px-3">SCSS</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Webpack</span>
                   <span class="rounded-xl bg-gray-300 px-3">Vue</span>
                   <span class="rounded-xl bg-gray-300 px-3">Vuex</span>
                   <span class="rounded-xl bg-gray-300 px-3">Bootstrap</span>
@@ -342,88 +345,87 @@
           <div id="projects" class="prose">
             <h2 class="section-headline">Projects</h2>
             <div class="mb-16">
-              <h3 id="dinoeatlife-headline">Dino Eat Life</h3>
+              <h3 id="sitzplan-headline">School Seating Plan</h3>
               <p class="text-sm italic">Still in development</p>
               <section class="mb-6">
-                <h3 class="hidden">Dino Eat Life App Description</h3>
+                <h3 class="hidden">Description</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  App for managing food-related stuff:
+                  App for Teachers to Create a Seating Plan
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  Manage meal planning, food storage and shopping with your
-                  family members or flat mates from right within a single mobile
-                  app.
+                  Teachers can create a seating plan from scratch in a custom
+                  grid by placing tables and students via drag-n-drop. The app
+                  provides an auto-arragement feature, that rearranges students
+                  base on constraints the teacher may provide. There are three
+                  types of constraints:
+                  <ul>
+                    <li>Student needs to sit in first or last row</li>
+                    <li>Student must not sit next certain other student(s)</li>
+                    <li>Arrange all male and female students alternatingly</li>
+                  </ul>
+                  Teachers can share their seating plan via a URL or save the
+                  plan as PDF.
                 </div>
               </section>
               <section class="mb-6">
-                <h3 class="hidden">Dino Eat Life Code Repository</h3>
+                <h3 class="hidden">School Seating Plan Code Repository</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Code on:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
                   <a
                     class="block pb-2"
-                    href="https://github.com/christiankozalla/dinoeatlife-ionic"
+                    href="https://github.com/christiankozalla/sitzplan"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Frontend: GitHub/dinoeatlife-ionic
-                  </a>
-                  <a
-                    class="block pb-2"
-                    href="https://github.com/christiankozalla/dinoeatlife-backend"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Backend: GitHub/dinoeatlife-backend
+                    GitHub/sitzplan
                   </a>
                 </div>
               </section>
               <section class="mb-6">
-                <h3 class="hidden">Dino Eat Life Features</h3>
+                <h3 class="hidden">School Seating Plan Features</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Features:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
                   <div class="font-semibold">Frontend</div>
-                  <span class="text-sm italic">
-                    Most features still in development
-                  </span>
                   <ul class="m-ul">
+                    <li>Users can create tables and students on a grid</li>
                     <li>
-                      Run the app on Android, iOS and on the web with Ionic
+                      Users can customize the grid rows and columns between 9
+                      and 12
                     </li>
                     <li>
-                      Manage data stores with BehaviorSubjects within Angular
-                      services
+                      Users can move tables and students around via drag-n-drop
                     </li>
-                    <li>Users can create posts and recipes</li>
-                    <li>Users can plan meals</li>
-                    <li>Users can manage food storage and shopping lists</li>
-                    <li>Invite family members or flat mates</li>
-                  </ul>
-                  <div class="font-semibold">Backend</div>
-                  <ul>
-                    <li>User authentication and authoritation with JWT</li>
-                    <li>Access token and refresh token logic</li>
-                    <li>Register users with email validation</li>
-                    <li>Anti-CSRF cookie</li>
+                    <li>Users can remove tables and students</li>
+                    <li>
+                      Users can enter constraints for each student in order to
+                      let the app auto-arrange the students
+                    </li>
+                    <li>
+                      Users can share their seating arrangement via the URL -
+                      e.g. sent in an email or messenger
+                    </li>
+                    <li>
+                      Users can save their seating arrangement as PDF document
+                    </li>
                   </ul>
                 </div>
               </section>
 
               <section class="mb-6">
-                <h3 class="hidden">Tools Dino Eat Life is built with</h3>
+                <h3 class="hidden">School Seating Plan is built with</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Built with:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <span class="rounded-xl bg-gray-300 px-3">Angular</span>
-                  <span class="rounded-xl bg-gray-300 px-3">Ionic</span>
-                  <span class="rounded-xl bg-gray-300 px-3">Hapi</span>
-                  <span class="rounded-xl bg-gray-300 px-3">Prisma</span>
-                  <span class="rounded-xl bg-gray-300 px-3">PostgreSQL</span>
-                  <span class="rounded-xl bg-gray-300 px-3">Docker</span>
+                  <span class="rounded-xl bg-gray-300 px-3">React</span>
+                  <span class="rounded-xl bg-gray-300 px-3">TypeScript</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Vite</span>
+                  <span class="rounded-xl bg-gray-300 px-3">react-dnd</span>
+                  <span class="rounded-xl bg-gray-300 px-3">jspdf</span>
                 </div>
               </section>
             </div>
@@ -668,15 +670,15 @@
                 I'd like to expand my skills and knowledge in several fields
               </h4>
               <ul>
+                <li>JavaScript / TypeScript</li>
+                <li>Frontend Frameworks</li>
                 <li>Testing, e.g. with Jest</li>
                 <li>Mobile development / Cross-Platform</li>
-                <li>Databases</li>
                 <li>Prototyping and Wireframing, e.g. with Figma, Adobe XD</li>
-                <li>Scalable Vector Graphics</li>
                 <li>Web Components, e.g. with StencilJS, LitElement</li>
                 <li>
-                  Backend development, e.g. learn another language like Go,
-                  Python, PHP, Ruby, Java
+                  Backend development, e.g. learn another language like PHP,
+                  Ruby, Python, Go
                 </li>
               </ul>
             </div>

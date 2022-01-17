@@ -90,3 +90,21 @@ progress::-webkit-progress-value {
 .m-ul li:first-child {
   margin-top: 0 !important;
 }
+
+@media print {
+  #wrapper {
+    @apply flex flex-col px-4;
+  }
+
+  #sidebar {
+    @apply flex flex-col justify-center w-full sm:max-w-full;
+  }
+
+  .sidebar-section {
+    @apply flex gap-12 justify-between;
+  }
+}
+
+@page {
+  margin: 1cm;
+}

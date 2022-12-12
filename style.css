@@ -91,20 +91,45 @@ progress::-webkit-progress-value {
   margin-top: 0 !important;
 }
 
+.list-custom li {
+  font-style: italic;
+  margin-top: 0.4rem;
+}
+.list-custom li::before {
+  content: "#";
+  font-style: italic;
+}
+
 @media print {
+  @page {
+    margin: 25mm 15mm 25mm 15mm;
+  }
+  /* .section-headline {
+    @apply mt-4;
+  } */
+
+  .content {
+    @apply pb-8;
+  }
   #wrapper {
     @apply flex flex-col px-4;
   }
 
   #sidebar {
-    @apply flex flex-col justify-center w-full sm:max-w-full;
+    @apply flex flex-col justify-center p-0 w-full sm:max-w-full mt-4;
   }
 
   .sidebar-section {
     @apply flex gap-12 justify-between;
   }
+  .page-break-before {
+    break-before: page;
+  }
+  .page-break-after {
+    break-after: page;
+  }
+  .page-break-not-internal {
+    break-inside: avoid;
+  }
 }
 
-@page {
-  margin: 1cm;
-}
